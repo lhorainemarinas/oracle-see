@@ -1,0 +1,139 @@
+/**
+* ------------------------------------
+* GENERAL
+* ------------------------------------
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.4;
+    color: #fff;
+    background-color: #020200;
+}
+main {
+    background-image: url(../img/lebron-james.png), url(../img/neymar-jr.png), url(../img/bg.jpg);
+    background-position: 17% 50%, 86% -320%, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto 103%, auto 103%, cover;
+    position: relative;
+    z-index: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    display: table;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+div[class^=col] {
+    min-height: 1px;
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 100px;
+}
+
+div[class^=col].mid {
+    vertical-align: top;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+#particles-js,
+#canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#canvas {
+    opacity: 0.5;
+}
+
+/**
+* ------------------------------------
+* BOX
+* ------------------------------------
+*/
+
+
+.box-wrap.left {
+    background: url(../img/left-box.png) top center no-repeat / cover;
+    float: left;
+}
+
+.box-wrap.right {
+    background: url(../img/right-box.png) top center no-repeat / cover;
+    float: right;
+}
+
+.box-wrap {
+    padding: 18% 27% 47% 27%;
+    max-height: 54%;
+}
+
+.box-wrap h2 {
+    color: #e7d060;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.box-wrap.right h2 {
+    text-align: right;
+}
+
+.box-wrap p {
+    padding: 30px;
+    text-align: justify;
+    max-height: 55px;
+}
+
+.box-mid {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.box-mid a {
+    display: inline-block;
+}
+
+.box-mid a img {
+    width: 100%;
+}
+
+.box-mid p {
+    padding: 0 15%;
+    margin-bottom: 10px;
+}
+
+.box-mid p.em {
+    color: #f2d637;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.box-btn {
+    position: relative;
+    color: #f2d637;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 55px;
+    background: url(../img/call-to-action.png) center center no-repeat / 100% auto;
+}
+
+.box-btn:hover {
+    opacity: 0.7;
+}
